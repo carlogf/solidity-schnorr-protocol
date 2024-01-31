@@ -6,9 +6,10 @@ module.exports = {
   solidity: "0.8.20",
   networks: {
     hardhat: {
-      gasPrice: 0,
+      gas: 1000000000429720,
+      gasPrice: 1,
       initialBaseFeePerGas: 0,
-      blockGasLimit: 100000000429720,
+      blockGasLimit: 1000000000429720,
     },
   }
 };

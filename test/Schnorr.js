@@ -53,11 +53,46 @@ describe("Schnorr Protocol contract", function () {
         const z = BigInt("2581178580202173231983361769606702596438937575219053452360943336669012096641");
 
         validity = await schnorr.verifyProof(A,R,z);
-        expect(validity).to.equal(true);
+
+        //transaction_result = await schnorr.modExp(base, exponent, p);
+        const receipt = await validity.wait()
+        const result = receipt.logs[2].args[0]
+        console.log(receipt.logs)
+        console.log(result)
+
+
+        expect(result).to.equal(true);
     })
 
+    it("can do modular exponentiation with small numbers", async function(){
+        const [owner] = await ethers.getSigners();
+        const schnorr = await ethers.deployContract("Schnorr");
+        const b = 2;
+        const e = 3;
+        const p = 5;
+        const expected_result = 3;
 
-    
+        transaction_result = await schnorr.modExp(b,e,p);
+        const receipt = await transaction_result.wait()
+        const result = receipt.logs[0].args[0]
+
+        expect(result).to.equal(expected_result);
+    })
+
+    it("can do modular exponentiation with large numbers", async function(){
+        const [owner] = await ethers.getSigners();
+        const schnorr = await ethers.deployContract("Schnorr");
+        const base = 7;
+        const exponent = BigInt("2581178580202173231983361769606702596438937575219053452360943336669012096641");
+        const p = BigInt("3618502788666131213697322783095070105623107215331596699973092056135872020481");
+        const expected_result = BigInt("3053578517849343137809071590394047056037252082715353053430226642364877272778");
+
+        transaction_result = await schnorr.modExp(base, exponent, p);
+        const receipt = await transaction_result.wait()
+        const result = receipt.logs[0].args[0]
+
+        expect(result).to.equal(expected_result);
+    })
 
 
 });

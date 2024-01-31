@@ -71,6 +71,5475 @@
       "contracts/schnorr.sol:Schnorr": {
         "src": "contracts/schnorr.sol:6",
         "version": {
+          "withMetadata": "9e5a3199efa7922b0fd9b505974a5a5ead0513ee1d21f21aaa38b15256a08dd5",
+          "withoutMetadata": "0aa69af743e539b97dd9300031085eb3ee520bfab1748371105516634a6b24bb",
+          "linkedWithoutMetadata": "0aa69af743e539b97dd9300031085eb3ee520bfab1748371105516634a6b24bb"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:12"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:14"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:12"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:14"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "a366926facd3a1520621f1a6eff88048a3183d21eecf685a52c65565abd5904b",
+          "withoutMetadata": "3cb00bfecbf9a2257331ee331d9aff229cb434221b84a383c1daf292bb7a808e",
+          "linkedWithoutMetadata": "3cb00bfecbf9a2257331ee331d9aff229cb434221b84a383c1daf292bb7a808e"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "4a4eb5c4f2f48e66ea9d7df6e93b33435ac4807ed88e146812efa4dc2e7e9d39",
+          "withoutMetadata": "bb3311591ac24d2780b8bcc7d63cb68e4b4a45aa5c6cb3303108bdbf374193cd",
+          "linkedWithoutMetadata": "bb3311591ac24d2780b8bcc7d63cb68e4b4a45aa5c6cb3303108bdbf374193cd"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "09a78a8ed045bfe299a591d40f91f59daa7c12c43b09bb0ad0b8a7e78655da1c",
+          "withoutMetadata": "410eddb2a532a38f7d150d575e6ff7e4ed97f5f5063c3e027131316c8c1e14ba",
+          "linkedWithoutMetadata": "410eddb2a532a38f7d150d575e6ff7e4ed97f5f5063c3e027131316c8c1e14ba"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "60efe7b2ade5edf4e7369f4bc315909123a8034b636278fd0cdd98f491991dc7",
+          "withoutMetadata": "4a6f231de0cf3b82c8f9f731e7036120c994d5ecf935029fd4da511e73fdeccc",
+          "linkedWithoutMetadata": "4a6f231de0cf3b82c8f9f731e7036120c994d5ecf935029fd4da511e73fdeccc"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "882b0f35ee0f869b5b50c11bf2d818384f4be04c94e6afa78d49d2706ba88ba9",
+          "withoutMetadata": "3e3cc4bf760cc6b44326151026571301953aaf40681afc4783e25a153c352e91",
+          "linkedWithoutMetadata": "3e3cc4bf760cc6b44326151026571301953aaf40681afc4783e25a153c352e91"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "3f1c56330214c3c9313de7b80fa813a6a29b27679e2122e51a3fafe5baac4fde",
+          "withoutMetadata": "8f836da4daa0460f59111dbb54e951e92f83cd4ac1fca1f2d399a85c02cbea26",
+          "linkedWithoutMetadata": "8f836da4daa0460f59111dbb54e951e92f83cd4ac1fca1f2d399a85c02cbea26"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "954f439d5e279441e9802cfcf926c263bc2c01b0a2885c7349fc8e7aa0730b9c",
+          "withoutMetadata": "fdc3daa3ea4d6cec63b60e1c723147ac2294ee32d153e6dfe44635c5b186ce98",
+          "linkedWithoutMetadata": "fdc3daa3ea4d6cec63b60e1c723147ac2294ee32d153e6dfe44635c5b186ce98"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "14828e54d508244121f87c5268bf27cb60556fe00f5c0b397df8c158a05397ce",
+          "withoutMetadata": "118f58fe457ed7e9019785b726dc73967a6afb8c7b4287c45405e7b097256206",
+          "linkedWithoutMetadata": "118f58fe457ed7e9019785b726dc73967a6afb8c7b4287c45405e7b097256206"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "9fbb1c497f0622843c0b995f09954ec35fe47d802238c8b9d9ef21839e29e89b",
+          "withoutMetadata": "2dd79858cbad641d150f0c72e0fc458e165d1cc35d761385f943157482741b0f",
+          "linkedWithoutMetadata": "2dd79858cbad641d150f0c72e0fc458e165d1cc35d761385f943157482741b0f"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "092db81cb3ba8a49b928f52951008f88842799e2b328e54bab50729569b65c6c",
+          "withoutMetadata": "47cc6244b4dea3f9ce3c57ce42bfb3e0dc4aa0317cd01676d8c60f19071e60ae",
+          "linkedWithoutMetadata": "47cc6244b4dea3f9ce3c57ce42bfb3e0dc4aa0317cd01676d8c60f19071e60ae"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "e5217c10da74aa4da9a79dbd52bb45ecdd9126f2df795210ccba876731f728f0",
+          "withoutMetadata": "4934fffef78d6ba07ecc32518f61d29a6364c33baabfb064681cd6d2b387880f",
+          "linkedWithoutMetadata": "4934fffef78d6ba07ecc32518f61d29a6364c33baabfb064681cd6d2b387880f"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "f6122f9a880e27001104932c0dc58f4adeb73a73bce002818ea2c1cedb43dd5b",
+          "withoutMetadata": "af2de5c3e517d1a447278fef5b41f1d977619d1d75d7748e7d080b4765a6e14e",
+          "linkedWithoutMetadata": "af2de5c3e517d1a447278fef5b41f1d977619d1d75d7748e7d080b4765a6e14e"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "c8f5951019677d435f1bdd6e26e64b96cb36ae5c5f7aa8516a9b793b05e904a6",
+          "withoutMetadata": "37f80b0cc17c666ca7361ab161998f9e6123e8601ff83601f4453208b70f9417",
+          "linkedWithoutMetadata": "37f80b0cc17c666ca7361ab161998f9e6123e8601ff83601f4453208b70f9417"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "5ef88f4169c23eb104f792cffc91006c9630bb2e6e5d20c17ef814f8a745262e",
+          "withoutMetadata": "2f6da6f8a11bb0616a6c6b28706567295a127460db1a2ea4c175f7616f61b525",
+          "linkedWithoutMetadata": "2f6da6f8a11bb0616a6c6b28706567295a127460db1a2ea4c175f7616f61b525"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "333b93b667e34bf4d0f47de9d330b90aacd6b95f617c2df6f9938110329961f1",
+          "withoutMetadata": "0d1b150b205844db1220236a9d63f14ca396dbf864386de4b6a03249ff3b694b",
+          "linkedWithoutMetadata": "0d1b150b205844db1220236a9d63f14ca396dbf864386de4b6a03249ff3b694b"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "8779558a7c3f136853eac5c18329d6578e5fffe4c89a58fb6845ae2c7a9eb62b",
+          "withoutMetadata": "65c04cd52f3f9df09523b21fc80d7c55901b2cd8163f1bbc243a44947f014b18",
+          "linkedWithoutMetadata": "65c04cd52f3f9df09523b21fc80d7c55901b2cd8163f1bbc243a44947f014b18"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "f7d9322c3b13ac1c7c878edb6b71093b14f606f6e349d74986b92b8556364aae",
+          "withoutMetadata": "b485cf08236ad218ef1ad8631ea9b867c67b067e4db4cfba4b974b95bcf9e2fe",
+          "linkedWithoutMetadata": "b485cf08236ad218ef1ad8631ea9b867c67b067e4db4cfba4b974b95bcf9e2fe"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "a0980222ab3449c66459d2c570986756c6ea95dfde414aff21cf70ed6d172814",
+          "withoutMetadata": "aef44fcfb206225d6b07195b9abb4dd5835750153094db0abe3992dba4fe7d4e",
+          "linkedWithoutMetadata": "aef44fcfb206225d6b07195b9abb4dd5835750153094db0abe3992dba4fe7d4e"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "d88b7b9b4a7974f95a62579e9b3c8b3408fecfb4f3f42df07fb6641119313a67",
+          "withoutMetadata": "134678f3700a3f1ab6502fdd0d67f49b149db7b789979b9b15364da0e10f4091",
+          "linkedWithoutMetadata": "134678f3700a3f1ab6502fdd0d67f49b149db7b789979b9b15364da0e10f4091"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "4113047c2db546a8b21333e168c1c37619d9b46c39346fd7d3cf7b13a2a200b3",
+          "withoutMetadata": "b7db9eff1ad76a2dc689ec941164182dfa03c392b4bcc577fe4e1e549bddd69d",
+          "linkedWithoutMetadata": "b7db9eff1ad76a2dc689ec941164182dfa03c392b4bcc577fe4e1e549bddd69d"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "d88b7b9b4a7974f95a62579e9b3c8b3408fecfb4f3f42df07fb6641119313a67",
+          "withoutMetadata": "134678f3700a3f1ab6502fdd0d67f49b149db7b789979b9b15364da0e10f4091",
+          "linkedWithoutMetadata": "134678f3700a3f1ab6502fdd0d67f49b149db7b789979b9b15364da0e10f4091"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "1bf0b03ef5a8fb39c77af55f8e3f7538b98bf3aa262a32b5deca08256a5fd133",
+          "withoutMetadata": "12be9f9fb2aeadb8733ab33016c2f7479f433a9ea937ac6e488a88044cbe7996",
+          "linkedWithoutMetadata": "12be9f9fb2aeadb8733ab33016c2f7479f433a9ea937ac6e488a88044cbe7996"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "241ff37afa5196fdaaddbb42c6d207a7e11bcf0c169e73024964d935c0fb8bde",
+          "withoutMetadata": "4061d79562d8faa7325c65901d2f043eb6df292c4558c82e751df38de766d63c",
+          "linkedWithoutMetadata": "4061d79562d8faa7325c65901d2f043eb6df292c4558c82e751df38de766d63c"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "c8f6fc3ef5cd64b9034ce72516c07fb6d2490917c6bf9fca30cf35018be1f72c",
+          "withoutMetadata": "e8fa4c3b417f13127fb6ac1ba0a9ee003fa26005e0f62da0398310aa7b630538",
+          "linkedWithoutMetadata": "e8fa4c3b417f13127fb6ac1ba0a9ee003fa26005e0f62da0398310aa7b630538"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "5f03dbb21be050879e898b86a56326bebd2b01be513c8c30d984ccbbe66e7139",
+          "withoutMetadata": "6f9a08313dd544d3d0cd7dded4ca9ec50659ab536ab50883b178942526000dca",
+          "linkedWithoutMetadata": "6f9a08313dd544d3d0cd7dded4ca9ec50659ab536ab50883b178942526000dca"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "3f8c5c2eccb684e490a0e23a4ee4fc1d902115c06dc99cc1a56f80c62ba89f0e",
+          "withoutMetadata": "70c1e08600836af961a8baa291d7ace29dff410695e1935b5f87d3a6f4b62fa4",
+          "linkedWithoutMetadata": "70c1e08600836af961a8baa291d7ace29dff410695e1935b5f87d3a6f4b62fa4"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "8520279a360627fa4b07e40baac949a15ae9ab8162079ff657e2820f64aa3a08",
+          "withoutMetadata": "9dceb15511e2ff75a1f41c41b17c7e15872b5e4d354a270c4bb6bae6b0787555",
+          "linkedWithoutMetadata": "9dceb15511e2ff75a1f41c41b17c7e15872b5e4d354a270c4bb6bae6b0787555"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "1597451c9c10bf8a677d9408388cbc5543af1e9605538bf22122870fc47df1ec",
+          "withoutMetadata": "59ce154a29f08979edd60895ce84a1b74583bc0e71ce379ee0c67537f823cd9d",
+          "linkedWithoutMetadata": "59ce154a29f08979edd60895ce84a1b74583bc0e71ce379ee0c67537f823cd9d"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "a550ea326c97e9eaffb7dc4bf9854d3711bf84f4e00e9e290fb54c447ac6686a",
+          "withoutMetadata": "419fef3a3745aac02a4e1c38c3a34e88848c63bc07ee77cc84c1411aa9df0ebc",
+          "linkedWithoutMetadata": "419fef3a3745aac02a4e1c38c3a34e88848c63bc07ee77cc84c1411aa9df0ebc"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "ce91e38e66206efd76a62888297d432cdc5c0b440df310b3e81b134d405f540a",
+          "withoutMetadata": "8bb3274a8eb44a12397e93c42bcbc647a7f43612fa85505518dabba72bc6c8ad",
+          "linkedWithoutMetadata": "8bb3274a8eb44a12397e93c42bcbc647a7f43612fa85505518dabba72bc6c8ad"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "07d63442a6944bd804373999a87d180bd7235018247aca5efd2adf378c25db7c",
+          "withoutMetadata": "6b75439605d801de973f9d42ec496864e765ab6ce5bb66e2e356b29206a67eb3",
+          "linkedWithoutMetadata": "6b75439605d801de973f9d42ec496864e765ab6ce5bb66e2e356b29206a67eb3"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "2d5dc9a9914504721d913541a541631cf620752409383bed71f76fffa2b8394b",
+          "withoutMetadata": "2d8052370d83a2ef2a00958e596eb0e9e090367f67eac612aca3533f52f397eb",
+          "linkedWithoutMetadata": "2d8052370d83a2ef2a00958e596eb0e9e090367f67eac612aca3533f52f397eb"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:11"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "06ac31bbc2cc38b3ec1d77bbb6ddf3ab62336324776cb810b6009878cce1b321",
+          "withoutMetadata": "5ee54182300e885dda5dd6545d4fdb8dbcdd256d71445ee51fd7da1a98d84228",
+          "linkedWithoutMetadata": "5ee54182300e885dda5dd6545d4fdb8dbcdd256d71445ee51fd7da1a98d84228"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:10"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:10"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:12"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "e4077d6aabd6b50234970d32136caab077416a3f9947e99af7c59f81f1bd804a",
+          "withoutMetadata": "3457edf2e56e55e415dfda820174e817271f43a655a830cc0bb383bbffac322a",
+          "linkedWithoutMetadata": "3457edf2e56e55e415dfda820174e817271f43a655a830cc0bb383bbffac322a"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:10"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:10"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:12"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
+          "withMetadata": "020800a6da8ebd9e6bea3689955c2bbec98035eadd2b812d14d6106152faa26f",
+          "withoutMetadata": "3da8caeddaf68a5c68395f99e34a2eac92c427063dc1ea08211124a85ccdae7c",
+          "linkedWithoutMetadata": "3da8caeddaf68a5c68395f99e34a2eac92c427063dc1ea08211124a85ccdae7c"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings",
+          "hardhat/console.sol:console"
+        ],
+        "methods": [
+          "modExp(uint256,uint256,uint256)",
+          "primeOrder()",
+          "generator()",
+          "hashModp(string)",
+          "verifyProof(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "p",
+            "src": "contracts/schnorr.sol:10"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "g",
+            "src": "contracts/schnorr.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "p",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:10"
+            },
+            {
+              "label": "g",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Schnorr",
+              "src": "contracts/schnorr.sol:12"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "hardhat/console.sol:console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "13aaa7e9058725cea4767e1b79fb10310ce74e9ba6f6d3740848781ffa10c45a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin/contracts/utils/Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin/contracts/utils/math/Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin/contracts/utils/math/SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/schnorr.sol:Schnorr": {
+        "src": "contracts/schnorr.sol:6",
+        "version": {
           "withMetadata": "ad562447dd1e1288840347c3c7062c691f5fba1a6055ee5fa4b24a69a57235b4",
           "withoutMetadata": "3da8caeddaf68a5c68395f99e34a2eac92c427063dc1ea08211124a85ccdae7c",
           "linkedWithoutMetadata": "3da8caeddaf68a5c68395f99e34a2eac92c427063dc1ea08211124a85ccdae7c"
