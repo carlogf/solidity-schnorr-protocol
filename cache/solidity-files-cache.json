@@ -39,8 +39,8 @@
       ]
     },
     "/home/carlo/Documents/bitcoin/ethereum/solidity-schnorr-protocol/contracts/schnorr.sol": {
-      "lastModificationDate": 1706738295012,
-      "contentHash": "db3d75c61d46fd7b63fa041e0262eef8",
+      "lastModificationDate": 1706910493384,
+      "contentHash": "b82e364fa8fdf5ba16a0315d786f8a11",
       "sourceName": "contracts/schnorr.sol",
       "solcConfig": {
         "version": "0.8.20",

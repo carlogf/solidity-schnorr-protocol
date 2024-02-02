@@ -62,25 +62,22 @@ contract Schnorr {
 
     function verifyProof(uint A, uint R, uint z) external returns(bool) {
         uint startinggas = gasleft();
+
         console.log("starting gas %s", startinggas);
+
         string memory concatenated_string = string.concat(g.toString(), A.toString());
         concatenated_string = string.concat(concatenated_string, R.toString());
 
         uint trueb = hashModp(concatenated_string);
-        //uint b = 1402792775372648592525927564370757360609555190463462275225337945118506663348;
 
         uint lhs = modExp(g, z, p);
         uint aux_rhs = modExp(A, trueb, p);
         uint rhs = mulmod(R,aux_rhs,p);
         uint mygas = gasleft();
-        console.log("gas left %s", mygas);
+        //console.log("gas left %s", mygas);
 
         uint usedGas = startinggas - mygas;
-        console.log("used gas %s", usedGas);
-
-
-        console.log("my value lhs is %s",lhs);
-        console.log("my value rhs is %s",rhs);
+        //console.log("used gas %s", usedGas);
 
         bool validity = (lhs == rhs);
 

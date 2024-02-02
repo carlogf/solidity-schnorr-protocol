@@ -44,23 +44,18 @@ describe("Schnorr Protocol contract", function () {
     })
 
 
-    it("can verify xxxx", async function(){
+    it("can verify a valid proof", async function(){
         const [owner] = await ethers.getSigners();
         const schnorr = await ethers.deployContract("Schnorr");
-
         const A = BigInt("3193911330048772750163466840708703342603689863347316625363164265906920649196");
         const R = BigInt("3381150360092203933314116350121226761344165239458780575523012581341808801475");
         const z = BigInt("2581178580202173231983361769606702596438937575219053452360943336669012096641");
 
         validity = await schnorr.verifyProof(A,R,z);
-
-        //transaction_result = await schnorr.modExp(base, exponent, p);
         const receipt = await validity.wait()
-        const result = receipt.logs[2].args[0]
-        console.log(receipt.logs)
-        console.log(result)
-
-
+        const result = receipt.logs[2].args[0] //la funcion verify tiene 3 emits en total. 1 por cada llamada a modexp y uno final que es booleano.
+        
+        //console.log(result)
         expect(result).to.equal(true);
     })
 
